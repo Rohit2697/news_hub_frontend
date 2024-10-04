@@ -34,7 +34,7 @@ export default function SideBar() {
     dispatch(updateContext('category'));
     if (categoryToSelect === 'all news') {
       dispatch(getAllNews());
-    } else if ((categoryToSelect = 'recommended')) {
+    } else if (categoryToSelect === 'recommended') {
       dispatch(getRecommendation());
       // dispatch(updateContext('recommended'));
     } else {
